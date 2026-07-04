@@ -6,11 +6,51 @@
     <title>Workshop Registration Form</title>
 </head>
 <body>
-    <form action="">
+    <form action="submission.html" target="_blank">
         <h1>Workshop on Research Publication Fundamentals</h1>
-        <h3>Please fill out the form to register for the Workshop</h3>
-        Full Name:
-        <input type="text" name="name" id="" placeholder="First Name"> <input type="text" placeholder="Last Name">
-    </form>
+        <h4>Please fill out the form to register for the Workshop</h4>
+        <strong>Full Name:</strong>  <br>
+        <input type="text" name="name" id="" placeholder="First Name" required> <input type="text" placeholder="Last Name" required>
+        <br><br><strong>Email Address:</strong>  <br>
+        <input type="email" size="40" name="" placeholder="example@example.com" required>
+        <br><br><strong>Gender:</strong>
+        <br><input type="radio" name="grnder" value="male" required id="">Male
+        <br><input type="radio" name="grnder" value="female">Female
+        <br><input type="radio" name="grnder" value="others">Others
+        <br><br><strong>University/Instituition:</strong> <br>
+        <input type="text" size="50" placeholder="e.g.Begum Rokeya University,Rangpur" required>
+        <br><br><strong>Department/Field of Study:</strong> <br>
+        <input type="text" name="" id="" placeholder="e.g.EEE/CSE/ME" required>
+        <br><br><strong>Year of Study:</strong>
+        <select name="" id="" required>
+            <option value="select year of study" selected disabled>Select year of study</option>
+            <option value="1st Year">1st Year</option>
+            <option value="2nd Year">2nd Year</option>
+            <option value="3rd Year">3rd Year</option>
+            <option value="4th Year">4th Year</option>
+        </select>
+        <br><br><strong>T-shirt Size:</strong>
+            <br><input type="radio" value="S" name="recommended" id="" required>S</input>
+        <br><input type="radio" value="M" name="recommended" id="">M</input>
+        <br><input type="radio" value="L" name="recommended" id="">L</input>
+        <br><input type="radio" value="XL" name="recommended" id="">XL</input>
+        <br><input type="radio" value="XXL" name="recommended" id="">XXL</input>
+        <br><br><strong>Where have you learned about this Workshop?</strong>
+        <br><input type="checkbox" name="Through my friends" id="" required>Through my friends
+        <br><input type="checkbox" name="Through my senior" id="">Through my senior
+        <br><input type="checkbox" name="Through my junior" id="">Through my junior
+        <br><input type="checkbox" name="Through others" id="">Through others
+        <br><input type="checkbox" name="Through fb post" id="">Through fb post
+        <br><input type="checkbox" name="It's secret" id="">It's secret
+        <br><br><strong>Do you think this Workshop will be helpful to you?</strong>
+        <br><input type="radio" value="Definately" name="recommended2" id="" required>Definately
+        <br><input type="radio" value="May be" name="recommended2" id="">May be
+        <br><input type="radio" value="Not sure" name="recommended2" id="">Not sure
+        <center>
+        <br><br>
+            <button type="submit">Submit</button>
+        <br><br>
+        </center>
+        </form>
 </body>
 </html>
